@@ -1,50 +1,42 @@
-body {
+body{
     font-family: 'Mochiy Pop One', sans-serif;
-    text-align: center;
-    padding: 50px;
 }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-nav a {
-    font-size: 24px;
-    margin: 0 10px;
-    color: #000;
-    text-decoration: none;
+/*ヘッダー部分*/
+header{
     background-color: #fff5ee;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 30px 0;
+    font-size: 20px;
 }
-
-nav a:hover {
+/*メニュー横並び*/
+ul{
+    display: flex;
+    gap: 0 30px;
+    justify-content: center;
+}
+/*ヘッダー部分 リンクにカーソルを合わせたら赤色にする*/
+a:hover{
     color: red;
 }
-.image-container {
-    display: inline-block;
-    margin: 0 10px;
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
 }
 
-.image-container img {
-    width: 250px;
+/*記事一覧の対応*/
+.blog-contents{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 0 16px;
 }
-
-.image-container p {
-    font-size: 18px;
-    margin-top: 20px;
+/*記事の大きさの設定*/
+.blog-article{
+    width: 30%;
 }
-
-footer {
-    margin-top: 50px;
-}
-
-footer a {
-    color: #333;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+/*画像の大きさの設定*/
+img{
+    width: 100%;
 }
