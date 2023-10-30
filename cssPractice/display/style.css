@@ -1,0 +1,30 @@
+header{
+    background-color: pink;
+}
+ul{
+    /*箇条書きの点を削除*/
+    list-style: none;
+    /*liたちを横並びにます*/
+    display: flex;
+    /*做一个缝隙*/
+    gap: o 10px;
+    /*中央*/
+    justify-content: end;
+
+}
+.last{
+    margin-right: 30px;
+}
+.blog-contens{
+    display: flex;
+    width: 90%;
+    gap: 0 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.blog{
+    width: 30%;
+}
+img{
+    width: 100%;
+}

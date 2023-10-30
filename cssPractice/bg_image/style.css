@@ -1,0 +1,21 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#a{
+    background-image: url(mountains.jpeg);
+    background-repeat: no-repeat;/*地方小 图片大 指定图片不重复*/
+    background-size: contain;/*图片调整*/
+}
+#b{
+    background-image: url(mountains.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#c{
+    background-image: url(mountains.jpeg);
+    background-repeat: no-repeat;
+    background-size: 200px 50px;
+}
