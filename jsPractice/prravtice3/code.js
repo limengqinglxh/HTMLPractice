@@ -1,15 +1,30 @@
-window.onload = function() {
-    const countValue = document.getElementById("countValue");
+let result = document.getElementById("text-result");
+let buttonReset = document.getElementById("change-text1");
+let buttonAdd = document.getElementById("change-text2");
+let buttonSub = document.getElementById("change-text3");
 
-    document.getElementById("reset").onclick = function() {
-        countValue.innerText = 0;
-    }
+const BASE_TEXT = "値　：";
+let resultValue = 0;
+function changeResultText(){
+    result.innerHTML = BASE_TEXT + resultValue;
+}
 
-    document.getElementById("increment").onclick = function() {
-        countValue.innerText = parseInt(countValue.innerText) + 1;
-    }
+function calculateResultValue(setValue){
+    resultValue = resultValue + setValue;
+}
 
-    document.getElementById("decrement").onclick = function() {
-        countValue.innerText = parseInt(countValue.innerText) - 1;
-    }
-};
+buttonReset.addEventListener('click',()=>{
+    resultValue = 0;
+    changeResultText();
+});
+
+buttonAdd.addEventListener('click',()=>{
+    calculateResultValue(1);
+    changeResultText();
+});
+
+buttonSub.addEventListener('click',()=>{
+    calculateResultValue(-1);
+    changeResultText();
+});
+
